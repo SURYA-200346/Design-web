@@ -1,0 +1,349 @@
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+.navbar {
+    /* background-color: #80d0c7; */
+    position: fixed;
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(128, 208, 199, 0.563);
+    /* float: right; */
+    /* background-color: #80d0c7; */
+z-index: 2;
+}
+
+.icon {
+    /* display: inline-block; */
+    margin-left: 5%;
+    padding: 20px;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 3rem;
+}
+
+.navbar li {
+    padding: 20px;
+    /* margin: 10px; */
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+.navbar li a:hover {
+    color: #13547a;
+    transition-duration: 0.5s;
+}
+
+.dropdown a {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #151414;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    z-index: 1;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.dropdown a:hover {
+    color: #13547a;
+    transition-duration: 0.5s;
+}
+
+.section-1 {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    width: 100%;
+    height: 620px;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    width: 70%;
+    /* height: 400px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    margin: 10px auto;
+    top: 20%;
+    left: 14%;
+}
+
+.container h1 {
+
+    margin: 0;
+    font-size: 4.5em;
+    color: white;
+}
+
+.container h2 {
+    /* position: absolute; */
+    color: #13547a;
+    font-size: 30px;
+    margin: 1%;
+    top: 36%;
+    left: 30%;
+}
+
+.container form {
+    display: block;
+    margin: 0;
+    padding: 2em;
+    width: 50%;
+    height: 100px;
+}
+
+form input[type="search"] {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    font-size: 1.2em;
+    margin: 0;
+    width: 100%;
+    height: 65px;
+    border-radius: 30px;
+    border: none;
+}
+
+.section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: #80d0c7;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -35%;
+    left: 15%;
+    width: 70%;
+    height: 500px;
+    /* background-color: rgb(234, 11, 11);   */
+}
+
+.card {
+    position: absolute;
+    height: 500px;
+    width: 40%;
+    left: 2%;
+    border-radius: 30px;
+    background-color: #f2f9f8;
+    box-sizing: border-box;
+}
+
+.card h2 {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 1.7em;
+    top: 3%;
+    left: 5%;
+}
+
+.card p {
+    position: absolute;
+    font-family: sans-serif;
+    text-align: left;
+    top: 13%;
+    left: 5%;
+    font-size: 1.5em;
+    color: #717275;
+}
+
+.card img {
+    position: absolute;
+    top: 45%;
+    left: 9%;
+    /* border: 1px solid black; */
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition-duration: 1s;
+}
+
+.card-2 {
+    position: absolute;
+    height: 500px;
+    width: 60%;
+    left: 45%;
+    border-radius: 30px;
+    background-image: url(images/businesswoman-using-tablet-analysis.jpg);
+    background-size: cover;
+    /* background-image:rgb(20, 141, 171,0.1); */
+    color: white;
+
+}
+
+.card-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 138, 174, 0.5);
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.card-2:hover {
+    transform: translateY(-10px);
+    transition-duration: 1s;
+}
+
+.card-2 h2 {
+    position: absolute;
+    font-size: 2em;
+    z-index: 2;
+    top: 3%;
+    left: 3%;
+}
+
+.card-2 p {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    z-index: 2;
+    top: 18%;
+    left: 2%;
+    margin: 10px;
+}
+
+.card-2 button {
+    position: absolute;
+    width: 25%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    z-index: 2;
+    top: 45%;
+    left: 3%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #80d0c7;
+}
+
+.card-2 button:hover {
+    background-color: #13547a;
+    transition-duration: 0.7s;
+}
+
+.card-2 .foot {
+    position: absolute;
+    font-size: 1.7em;
+    z-index: 2;
+    top: 80%;
+    left: 3%;
+    margin: 10px;
+}
+
+/* Section-3 */
+.section-3 {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: aqua; */
+}
+
+.section-3 .container-3 {
+    position: relative;
+    height: 400px;
+    /* width: 80%; */
+    padding-top: 0;
+    margin-bottom: 0;
+    font-size: 3em;
+    /* display: block; */
+}
+
+
+.container-list .items {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    height: auto;
+    /* padding: 20px; */
+    top: 45%;
+    right: 60%;
+    left: 19%;
+    list-style-type: none;
+}
+
+.container-list li a {
+    text-decoration: none;
+    padding: 40px;
+    font-size: 1.5em;
+    color: rgb(119, 116, 116);
+}
+
+.container-list a:hover {
+    border-bottom: 1px solid #13547a;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    /* background-color: #80d0c7; */
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 15px;
+    width: 400px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) ;
+}
