@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
+    position: relative;
     border-bottom: 1px solid rgba(128, 208, 199, 0.563);
     z-index: 2;
 }
@@ -23,7 +24,6 @@
 }
 .navbar ul {
     display: flex;
-    /* justify-content: center; */
     list-style-type: none;
     padding: 0;
     margin-left: 4rem;
@@ -36,7 +36,8 @@
 .navbar li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 .navbar li a:hover {
     color: #13547a;
@@ -56,7 +57,7 @@
     background-color: #060606;
     width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     z-index: 1;
 }
 .dropdown-content a{
@@ -68,6 +69,20 @@
 }
 .dropdown a:hover {
     color: #13547a;
+    transition-duration: 0.5s;
+}
+.navbar .icon-1{
+    position: absolute;
+    top:30%;
+    left: 90%;
+    text-align: center;
+    background-color: beige;
+    border-radius: 50%;
+    padding: 7px;
+}
+.navbar .icon-1:hover{
+    background-color: #13547a;
+    /* color: white; */
     transition-duration: 0.5s;
 }
 #section-1 {
@@ -507,7 +522,7 @@ form input[type="search"] {
 .content button img {
     height: 20px;
     position: absolute;
-    left: 80%;
+    left: 50%;
     top: 27%;
     width: 20px;
     background: none;
@@ -549,7 +564,7 @@ iframe{
 .contact h3{
     display: inline;
     position: absolute;
-     top: -80%;
+     top: -95%;
     left: 52%;
     font-size: 2em;
 }
@@ -558,9 +573,31 @@ iframe{
     position: absolute;
     padding-bottom: 15px;
     width: 20%;
-    top: -40%;
+    top: -60%;
     left: 52%;
     font-size: 1.5em;
     color: gray;
     border-bottom: 2px solid grey;
+}
+.contact span{
+    position: absolute;
+    left: 52%;
+    top:25%;
+       color: gray;
+    font-size: 20px;
+}
+.contact .number{
+    position: absolute;
+    left: 56%;
+    color: #80d0c7;
+    font-size: 20px;
+}
+.contact .email{
+    position: absolute;
+    top:50%;
+}
+.contact .Email {
+    position: absolute;
+    top:50%;
+    left: 56%;
 }
